@@ -1,0 +1,4 @@
+fastapi
+SQLAlchemy
+pymysql
+python-dotenv
