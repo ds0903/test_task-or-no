@@ -1,4 +1,11 @@
 fastapi
 SQLAlchemy
 pymysql
+pandas
+openpyxl
 python-dotenv
+uvicorn
+alembic
+pydantic-settings
+cryptography
+python-multipart
