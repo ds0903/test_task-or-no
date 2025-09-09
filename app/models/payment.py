@@ -13,3 +13,6 @@ class Payment(Base):
     payment_date: Mapped[date]
     credit_id: Mapped[int] = mapped_column(ForeignKey("credits.id"), index=True)
     type_id: Mapped[int] = mapped_column(ForeignKey("dictionary.id"), index=True)
+
+    def __repr__(self) -> str:
+        return f"<Payment id={self.id} sum={self.sum} date={self.payment_date}>"

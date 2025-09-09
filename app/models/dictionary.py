@@ -7,3 +7,6 @@ class Dictionary(Base):
     __tablename__ = "dictionary"
     id: Mapped[int] = mapped_column(primary_key=True)
     name: Mapped[str] = mapped_column(String(128), unique=True)
+
+    def __repr__(self) -> str:
+        return f"<Dictionary id={self.id} name='{self.name}'>"

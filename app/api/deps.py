@@ -8,8 +8,9 @@ def session_scope():
     try:
         yield db
         db.commit()
-    except:
+    except Exception as e:
         db.rollback()
+        print(f"DB помилка через :( {e}")
         raise
     finally:
         db.close()

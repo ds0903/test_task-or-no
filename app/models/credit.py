@@ -17,4 +17,7 @@ class Credit(Base):
 
     body: Mapped[Decimal] = mapped_column(Numeric(18, 2), nullable=False)
     percent: Mapped[Decimal] = mapped_column(Numeric(18, 2), nullable=False)
-    user = relationship("User")
+    user = relationship("User", back_populates="credits")
+
+    def __repr__(self) -> str:
+        return f"<Credit id={self.id} user_id={self.user_id} body={self.body}>"

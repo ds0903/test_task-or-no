@@ -6,6 +6,7 @@ class CreditClosed(BaseModel):
     issuance_date: date
     closed: bool = True
     actual_return_date: date
+
     body: Decimal
     percent: Decimal
     payments_total: Decimal
@@ -17,6 +18,7 @@ class CreditOpen(BaseModel):
     closed: bool = False
     return_date: date
     overdue_days: int
+
     body: Decimal
     percent: Decimal
     payments_body: Decimal
