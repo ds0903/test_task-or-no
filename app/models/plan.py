@@ -14,4 +14,4 @@ class Plan(Base):
     category_id: Mapped[int] = mapped_column(ForeignKey("dictionary.id"))
 
     def __repr__(self) -> str:
-        return f"<Plan id={self.id} period={self.period} amount={self.amount}>"
+        return f"<Plan id={self.id} period={self.period} sum={self.sum}>"
