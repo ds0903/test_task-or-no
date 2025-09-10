@@ -57,7 +57,7 @@ def insert_plans_from_excel(db: Session, file_bytes: bytes):
             )
         ).first()
         if exists:
-            raise PlansInsertError("Дубль плану за період/категорією. Перевірте дані.") from e
+            raise PlansInsertError("Дубль плану за період/катгорією. Перевірте дані.")
 
     to_add = [
         Plan(

@@ -18,8 +18,9 @@ def user_credits(user_id: int, db: Session = Depends(get_db)):
     if credits is None or len(credits) == 0:
         raise HTTPException(status_code=404, detail=f"Для користувача {user_id} кредити не знайдено")
 
-    return {
-        "user_id": user_id,
-        "credits": credits,
-        "count": len(credits),
-    }
+    # return {
+    #     "user_id": user_id,
+    #     "credits": credits,
+    #     "count": len(credits),
+    # }
+    return credits

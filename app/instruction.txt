@@ -4,7 +4,7 @@
 http://127.0.0.1:9000/api/versia1/plans_insert
 
 Допоміжний метод для отримання статистики за рік
-http://127.0.0.1:9000/api/versia1/year_performance?date=2022-03-15
+http://127.0.0.1:9000/api/versia1/year_performance?year=2022
 
 Основний метод для отримання інформації за клієнтом
 http://127.0.0.1:9000/api/versia1/user_credits/1
